@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <script src="JQuery.js"></script>
+    <link rel="stylesheet" href="hw17.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <i class="fa fa-shopping-cart" aria-hidden="true">
+                <div class="num">0</div>
+            </i>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+            <div class="des">
+                <h1>Shirt</h1>
+                <p>Price: 20$</p>
+            </div>
+            <div class="cartbtn">Add to cart</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+            <div class="des">
+                <h1>Shirt</h1>
+                <p>Price: 20$</p>
+            </div>
+            <div class="cartbtn">Add to cart</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+            <div class="des">
+                <h1>Shirt</h1>
+                <p>Price: 20$</p>
+            </div>
+            <div class="cartbtn">Add to cart</div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+            <div class="des">
+                <h1>Shirt</h1>
+                <p>Price: 20$</p>
+            </div>
+            <div class="cartbtn">Add to cart</div>
+        </div>
+    </div>
+    <div class="cartpanel">
+        <div class="exit">X</div>
+    </div>
+</body>
+<script>
+    let i = 0;
+    let boxcart = 
+    `
+        <div class="boxcart">
+            <div class="piccart">
+                <img src="img/shirt.jpg" alt="">
+            </div>
+            <div class="descart">
+                <h3>Shirt</h3>
+                <p>Price: 20$</p>
+            </div>
+        </div>
+    `
+    $(document).ready(function(){
+        $('.cartbtn').click(function(){
+            i++;
+            $('.num').html(i);
+            $('.cartpanel').append(boxcart);
+        })
+        $('.fa').click(function(){
+            $('.cartpanel').css({'right':'0'})
+        })
+        $('.exit').click(function(){
+            $('.cartpanel').css({'right':'-400px'})
+        })
+    })
+</script>
+</html>

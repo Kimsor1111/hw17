@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgreen;
+    overflow-x: hidden;
+}
+.container{
+    width: 70%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.container .item{
+    width: 24%;
+    height: 440px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.container .item .pic{
+    width: 100%;
+    height: 60%;
+}
+.container .item .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.container .item .des{
+    width: 100%;
+    height: 25%;
+}
+.container .item .des h1,.container .item .des p{
+    text-align: center;
+    font-weight: 550;
+}
+.container .item .cartbtn{
+    width: 80%;
+    height: 10%;
+    margin-top: 5%;
+    background-color: green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.container .cart{
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .cart .fa{
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.container .cart .fa .num{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 0, 0, 0.932);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(28px , -40px);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartpanel{
+    width: 400px;
+    min-height: 100vh;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    transition: .5s all ease-in-out;
+}
+.cartpanel .exit{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+.cartpanel .boxcart{
+    width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: space-between;
+    margin: 0 2.5% 10px 2.5%;
+}
+.cartpanel .boxcart:nth-child(2){
+    margin-top: 100px;
+}
+.cartpanel .boxcart .piccart{
+    width: 30%;
+    height: 100%;
+}
+.cartpanel .boxcart .piccart img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.cartpanel .boxcart .descart{
+    width: 65%;
+    height: 100%;
+}
+.cartpanel .boxcart .descart h3,.cartpanel .boxcart .descart p{
+    font-weight: 550;
+    text-align: left;
+    font-size: 20px;
+}
