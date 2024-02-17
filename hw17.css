@@ -90,7 +90,7 @@ body{
     background-color: green;
     position: absolute;
     top: 0;
-    right: -700px;
+    right: -400px;
     transition: .5s all ease-in-out;
 }
 .cartpanel .exit{
