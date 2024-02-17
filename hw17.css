@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: lightgreen;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .container{
     width: 70%;
@@ -91,7 +91,7 @@ body{
     position: absolute;
     top: 0;
     right: -400px;
-    transition: .5s all ease-in-out;
+    transition: .6s all ease-in-out;
 }
 .cartpanel .exit{
     width: 50px;
